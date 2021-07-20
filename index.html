@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS with uhk and Cyto</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#end"><img class="downarrow" src="images/down-arrow-in-a-circle.png" alt=""></a>
+    <a href="#"><img class="uparrow" src="images/up-arrow-symbol-in-a-circle.png" alt="up"></a>
+    <div id="heading">
+        <h1>
+            CSS with Uhk And Cyto
+        </h1>
+    </div>
+    <div id="providingcss">
+        <h2>
+            Providing CSS
+        </h2>
+        <p>
+            <ul>
+                <li>Embedded Stylesheet</li>
+                <li>External Stylesheet</li>
+                <li>Inline Styles</li>
+            </ul>
+        </p>
+        <p>
+            <em>Embedded Stylesheet</em>: It is a stylesheet which is embedded within the HTML file in head using &lt;style&gt; section.
+        </p>
+        <p>
+            <em>External Stylesheet</em>: It is a stylesheet used for CSS styling which is an external file.
+            U need to link the external Stylesheet with the HTML file to style .<br>
+            Example:  &lt;link rel="stylesheet" href="style.css"&gt;
+        </p>
+        <p>
+            <em>Inline Styles</em>: It is CSS style which is given with the line of HTML.<br>
+            Example: &lt;p&gt; style="color=red;"
+        </p>
+    </div>
+    <div id="normalizingcss">
+        <h2>
+            <em>Normalizing CSS 🌙</em> 
+        </h2>
+        <p>
+            This is mainly used to Normalize CSS styles across all different plotforms (i.e browers). We need to link the Normalized CSS file with the HTML file.
+            <br>  &lt;link rel="stylesheet" href="normalize.css"&gt;
+    </div>
+    <div id="basicselectors">
+        <h2>
+            <em>Basic selectors:</em>
+        </h2>
+        <p>
+            Using selectors we can select bunch of HTML code and style it using CSS.
+        </p>
+        <p>
+            <ul>
+                <li>Class:</li>
+                <ol>
+                    Example: type.classname{......} or .classname{......} <ol>* We can have multiple elements with same class. All the elements in same class will be taking same styling if u choose .classname{......} method of selector</ol>
+                </ol>
+                <li>Id:</li>
+                <ol>
+                    Example: #id{.......} <ol>* We can't have multiple elements with same Id . Id must be unique:)</ol>
+                </ol>
+                <li>Type:</li>
+                <ol>
+                    Example: type{......}  <ol>* All the elements in the type irrespective of class will be selected if we use type{....} selector method.</ol>
+                </ol>
+                <li>Attribute:</li>
+                <ol>
+                    Its better if u dont use Attributes selectors. They are too fragile. But your this close to knowing it so here is an Example.<br>
+                    Example: a[href^=https"]{....<sub>anchors starting with https</sub>....} or a[href*=google"]{....<sub>anchors containing google term in it</sub>....}
+                </ol>
+            </ul>
+        </p>
+    </div>
+     <div id="relativeselector">
+         <h2>
+            Relative selector:
+             </h2>
+             <p>
+            Its highly not recommended to use Relative selectors. Premature optimization is root of evil &nbsp; <sub> -Donald kuth</sub> <br>Here is why :<br>
+            <img class="relativeselector" src="images/Screenshot 2021-07-05 193745.png" alt="Relative selector">
+            <img class="relativeselector" src="images/Screenshot 2021-07-05 194641.png" alt="">
+             </p>
+     </div>
+     <div id="pseudoclass">
+         <h2>
+             Pseudo Class
+         </h2>
+         <p>
+            Pseudo Class are classes which are applied by browers default. All Pseudo Classes starts with colon. These are fragile too.<br>
+            <article>
+                <p>
+                    Example: article p: <i>first-child</i>{......}
+                </p>
+                <ul>
+                    <li>article: <i>last-child</i>{......}</li>
+                    <li>article h1: <i>first-child</i>{......}</li>
+                    <li>article p: <i> nth-child </i>(odd){......}</li>
+                </ul>
+                For changing the links color which we visited and all anchors links color which we havent visited <br>
+                <ul>
+                a:visited{ color:"..."} , a:link {color:"..."}<br>
+                <a href="https://mega.nz/folder/Oe4T1AJL#bSU4i-qoF6X6DTdx-oarHQ/folder/yfoHQYLA" target="_blank">Pseudo Classes</a><br>
+                </ul>
+                For changing the color of hover effect on any element
+                <ul class="hover">
+                 p:hover , p:focus { color:"..."} 
+                </ul>
+            </article>
+         </p>
+     </div>
+     <div id="pseudoelement">
+         <h2>Pseudo element</h2>
+         <p>
+            Pseudo element are applied by browers default which is used to edit to style elements in particular style. All Pseudo elements starts with 2 colons.
+         </p>
+             <img class="Pseudoelementimg" src="images/Screenshot 2021-07-13 191348.png" alt="Pseudo element">
+         <p>
+            Example: p::first-child {......}
+            <ul>
+                <li>p::first-letter {......}</li>
+                <li>p::first-line {......}</li>
+            </ul>
+            <p class="selection">We can change the selection of text color using pseudo element</p>
+            <ul>
+                <li>p::selection { background-color: pink;}</li>
+            </ul>
+            <p class="selection">To make any selection as a single color</p>
+            <ul>
+                <li>::selection { background-color: pink;}</li>
+            </ul>
+            To insert any content before or after element
+            <ul>
+                <li>p::before{ content:"......"} i.e this will insert content before p element</li>
+                <li>p::after{ content:"......"} i.e this will insert content after p element</li>
+            </ul>
+            Block level element takes whole line. We can set display to block to make it block level element.
+            <ul>
+                <li>p::before{ content="..."; display =  block;} </li>
+            </ul>
+         </p>
+     </div>
+     <div id="selectorspecificity">
+         <h2>Selector Specificity</h2>
+         <p>
+             Any browers would give more specificity to id,class and element selector respectively.
+         </p>
+         <img class="ss" src="images/Screenshot 2021-07-14 193445.png" alt="selectorspecificity">
+     </div>
+     <div id="inheritance">
+         <h2>Inheritance</h2>
+         <p>
+             By default some of the css properties inherit value from their parents. Such as color to the bold text 
+             Example:
+             <ul>
+                 <li>Apple is leading Tech Company </p></li>
+             </ul>
+             To not get inherited use initial.
+         </p>
+        </div>
+        <div id="color">
+            <h2>Colors</h2>
+            <p>
+                There are four ways to use colors in CSS
+                <ul>
+                    <li>RGB</li>
+                    <li>HSL</li>
+                    <li>Named Colors</li>
+                    <li>Hexa Decimal</li>
+                </ul>
+                 Use rgba tag to set specific color along with opacity of it in which "a" stands for alpha(opacity).
+            </p>
+        </div>
+        
+        <p id="end">THE END</p>       
+</body>
+</html>
