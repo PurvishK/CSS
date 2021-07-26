@@ -9,12 +9,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+   
     <a href="#end"><img class="downarrow" src="images/down-arrow-in-a-circle.png" alt="down"></a>
     <a href="#"><img class="uparrow" src="images/up-arrow-symbol-in-a-circle.png" alt="up"></a>
     <div id="heading">
         <h1>
             <img id="logo" src="images/css-3-svgrepo-com.svg" alt="image">CSS with Uhk And Cyto
         </h1>
+    </div>
+    <div id="nav">
+        <div class="box"><a href="#providingcss">Providing CSS</a></div>
+        <div class="box"><a href="#normalizingcss" >Normalizing CSS</a></div>
+        <div class="box"><a href="#basicselectors" >Basic Selectors</a></div>
+        <div class="box"><a href="#relativeselector" >Relative Selectors</a></div>
+        <div class="box"><a href="#pseudoclass" >Pseudo Classes</a></div>
+        <div class="box"><a href="#pseudoelement" >Pseudo Elements</a></div>
+        <div class="box"><a href="#selectorspecificity" >Selector Specificity</a></div>
+        <div class="box"><a href="#inheritance" >Inheritance</a></div>
+        <div class="box"><a href="#colorsandgradients" >Colors</a></div>
+
+
     </div>
     <div id="providingcss">
         <h2>
@@ -163,9 +177,10 @@
              To not get inherited use initial.
          </p>
         </div>
-        <div id="color">
-            <h2>Colors</h2>
+        <div id="colorsandgradients">
+            <h2>Colors and Gradients</h2>
             <p>
+                <h3>Colors</h3>
                 There are four ways to use colors in CSS
                 <ul>
                     <li>RGB</li>
@@ -175,8 +190,25 @@
                 </ul>
                  Use rgba tag to set specific color along with opacity of it in which "a" stands for alpha(opacity).
             </p>
+            <h3>Gradients</h3>
+            <p>
+                U can set Background color Gradients according to ur own style by choosing in between in linear gradients and radial gradients.
+                <br> Example:
+                <ul>
+                    <li>background : linear-gradient( dodgerblue, yellow);</li>
+                    <li>background : radial-gradient( dodgerblue, yellow);</li>
+                </ul>
+                Or u can use <a href="https://cssgradient.io/">CSS Gradient</a> for choosing linear gradients. 
+            </p>
+            <h3>Box Shadow</h3>
+            <p>
+                U can use box shadow for 2D-3D box shadowing.
+                Example:
+                <ul>
+                    <li>box-shadow: 3px 3px 3px rgba(0,0,0,0.3)</li>
+                </ul>
+            </p>
         </div>
-        
         <p id="end">THE END</p>       
 </body>
 </html>

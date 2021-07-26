@@ -6,6 +6,61 @@ html{
     font-weight: 600;
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
   }
+  body{
+    font-size: 160%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-family: "San Francisco";
+
+  }
+  
+  #nav a {
+    color: white;
+  }
+  #nav{
+    font-size: 120%;
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+div.box{
+    padding: 0.5rem;
+}
+@media screen and (min-width: 768px){
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    div.box{
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 1.2rem;
+    }
+    .gg{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    
+}
+  #colorsandgradients{
+    color: rgb(255, 255, 255);
+      box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.3);
+      padding-top: 0.1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 0.1rem;
+      border-radius: 0.7rem;
+      background-color:rgb(105, 33, 75);
+      margin-bottom: 1rem;
+      margin-left: 0.5rem;
+      margin-right:0.5rem;
+  }
   #inheritance{
     background-color: rgb(69 45 84);
     padding-top: 0.1rem;
@@ -153,13 +208,7 @@ html{
       margin-left: 0.5rem;
       margin-right:0.5rem;
   }
-  body{
-    font-size: 160%;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    font-family: "San Francisco";
-
-  }
+  
   #heading{
     background-color: #675035;
     border-radius: 0.5rem;
@@ -187,10 +236,10 @@ img.relativeselector{
     width:35rem;
 }
 a:visited{
-  color: green;
+  color: rgb(77, 77, 77);
 }
 a:link {
-  color: red;
+  color: rgb(89, 0, 255);
 }
 ul.hover:hover,ul.hover:focus{
   color:rgb(255, 0, 0)
