@@ -18,10 +18,14 @@ html{
     color: white;
   }
   #nav{
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
     font-size: 120%;
     padding: 2rem;
     text-align: center;
-    background-color: black;
+    background-color: rgb(37, 36, 36);
 }
 a{
     text-decoration: none;
