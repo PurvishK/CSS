@@ -207,6 +207,7 @@ div.box{
        margin-top: 0.5rem;
        border-radius: 0.5rem;
        margin-bottom: 1rem;
+       color: brown;
      }
   #providingcss{
       color: rgb(255, 255, 255);
@@ -242,6 +243,9 @@ a:visited{
 }
 a:link {
   color: rgb(89, 0, 255);
+}
+div:hover{
+  font-size: 115%;
 }
 ul.hover:hover,ul.hover:focus{
   color:rgb(255, 0, 0)
